@@ -5,20 +5,15 @@ import ListItem from "@mui/material/ListItem";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Divider from "@mui/material/Divider";
-import HomeIcon from "@mui/icons-material/Home";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
-import ExploreIcon from "@mui/icons-material/Explore";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
-import ThumbUpIcon from "@mui/icons-material/ThumbUp";
-import GroupIcon from "@mui/icons-material/Group";
 import Avatar from "@mui/material/Avatar";
 import { green, pink, blue } from "@mui/material/colors";
 import PropTypes from "prop-types";
-import Link from "@mui/material/Link";
 import DeveloperBoardIcon from "@mui/icons-material/DeveloperBoard";
 import BusinessIcon from "@mui/icons-material/Business";
 import DesktopMacIcon from "@mui/icons-material/DesktopMac";
@@ -27,19 +22,16 @@ import BuildIcon from "@mui/icons-material/Build";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import img1 from "./tab1.jpg";
-import img2 from "./tab2.jpg";
+import img1 from "./media/tab1.jpg";
+import img2 from "./media/tab2.jpg";
 import StarIcon from "@mui/icons-material/Star";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import ImageIcon from "@mui/icons-material/Image";
-import WorkIcon from "@mui/icons-material/Work";
-import BeachAccessIcon from "@mui/icons-material/BeachAccess";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -98,47 +90,25 @@ export default function Home(props) {
         marginTop: "-40px",
       },
     },
-    // list: {
-    //   width: "229px",
-    //   marginTop: "60px",
-    //   position: "fixed",
-    //   backgroundColor: "#F7F7F7",
-    //   height: "100%",
-    //   borderRight: "1px solid #C8C8C8",
-    //   [theme.breakpoints.down("xs")]: {
-    //     width: "50px",
-    //   },
-    // },
-    // gridOne: {
-    //   marginTop: "70px",
-    // },
     tab: {
       backgroundColor: "#F7F7F7",
       borderBottom: "1px solid #C8C8C8",
-      // height:"60px",
-      // marginTop:"-12px"
     },
     tabs: {
       fontWeight: "bold",
       textTransform: "capitalize",
     },
     gridTwo: {
-      // marginTop: "80px",
       paddingLeft: "20px",
     },
     groupDetails: {
       backgroundColor: "#CFCFCF",
       padding: "10px",
-      // [theme.breakpoints.down("md")]: {
       alignItems: "center",
-      // },
     },
     subButton: {
       borderRadius: "50px",
       textTransform: "capitalize",
-      // [theme.breakpoints.up("md")]: {
-      //   marginLeft: "50px",
-      // },
     },
     btnSub: {
       borderRadius: "50px",
@@ -153,9 +123,7 @@ export default function Home(props) {
     relativeContent: {
       position: "relative",
     },
-    // cardOneContent:{
-    //   alignSelf: "center",
-    // }
+
     footerCard: {
       display: "flex",
       justifyContent: "space-between",
@@ -176,180 +144,6 @@ export default function Home(props) {
 
   return (
     <>
-      {/* <List className={classes.list}>
-        <ListItem style={{ marginBottom: "20px" }}>
-          <Stack direction="column" style={{ color: "#787878" }}>
-            <Stack direction="row" spacing={1}>
-              <HomeIcon style={{ marginTop: "18px" }} />
-              <Typography
-                variant="body2"
-                size="small"
-                style={{
-                  textTransform: "capitalize",
-                  fontWeight: "bold",
-                  marginTop: "21px",
-                }}
-              >
-                <Link href="#" underline="none" style={{ color: "#787878" }}>
-                  Home
-                </Link>
-              </Typography>
-            </Stack>
-            <Stack direction="row" spacing={1}>
-              <TrendingUpIcon style={{ marginTop: "18px" }} />
-              <Typography
-                variant="body2"
-                size="small"
-                style={{
-                  textTransform: "capitalize",
-                  fontWeight: "bold",
-                  marginTop: "20px",
-                }}
-              >
-                trends
-              </Typography>
-            </Stack>
-            <Stack direction="row" spacing={1}>
-              <ExploreIcon style={{ marginTop: "18px" }} />
-              <Typography
-                variant="body2"
-                size="small"
-                style={{
-                  textTransform: "capitalize",
-                  fontWeight: "bold",
-                  marginTop: "20px",
-                }}
-              >
-                Explore
-              </Typography>
-            </Stack>
-          </Stack>
-        </ListItem>
-        <Divider />
-        <ListItem style={{ marginBottom: "30px" }}>
-          <Stack direction="column" style={{ color: "#787878" }}>
-            <Stack direction="row" spacing={1}>
-              <FavoriteIcon style={{ marginTop: "18px" }} />
-              <Typography
-                variant="body2"
-                size="small"
-                style={{
-                  textTransform: "capitalize",
-                  fontWeight: "bold",
-                  marginTop: "20px",
-                }}
-              >
-                Saved
-              </Typography>
-            </Stack>
-            <Stack direction="row" spacing={1}>
-              <RemoveRedEyeIcon style={{ marginTop: "18px" }} />
-              <Typography
-                variant="body2"
-                size="small"
-                style={{
-                  textTransform: "capitalize",
-                  fontWeight: "bold",
-                  marginTop: "20px",
-                }}
-              >
-                most viewed
-              </Typography>
-            </Stack>
-            <Stack direction="row" spacing={1}>
-              <ThumbUpIcon style={{ marginTop: "18px" }} />
-              <Typography
-                variant="body2"
-                size="small"
-                style={{
-                  textTransform: "capitalize",
-                  fontWeight: "bold",
-                  marginTop: "20px",
-                }}
-              >
-                liked
-              </Typography>
-            </Stack>
-          </Stack>
-        </ListItem>
-        <Divider />
-        <ListItem>
-          <Stack direction="column" style={{ color: "#787878" }}>
-            <Stack direction="row" spacing={1}>
-              <GroupIcon style={{ marginTop: "18px" }} />
-              <Typography
-                variant="body2"
-                size="small"
-                style={{
-                  textTransform: "capitalize",
-                  fontWeight: "bold",
-                  marginTop: "20px",
-                }}
-              >
-                Groups
-              </Typography>
-            </Stack>
-            <Stack direction="row" spacing={1}>
-              <Avatar
-                alt="Arts"
-                src="/static/images/avatar/1.jpg"
-                sx={{ width: 35, height: 35, bgcolor: pink[500] }}
-                style={{ marginTop: "18px" }}
-              />{" "}
-              <Typography
-                variant="body2"
-                size="small"
-                style={{
-                  textTransform: "capitalize",
-                  fontWeight: "bold",
-                  marginTop: "25px",
-                }}
-              >
-                Arts
-              </Typography>
-            </Stack>
-            <Stack direction="row" spacing={1}>
-              <Avatar
-                alt="Bricolage"
-                src="/static/images/avatar/1.jpg"
-                sx={{ width: 35, height: 35, bgcolor: green[500] }}
-                style={{ marginTop: "18px" }}
-              />{" "}
-              <Typography
-                variant="body2"
-                size="small"
-                style={{
-                  textTransform: "capitalize",
-                  fontWeight: "bold",
-                  marginTop: "25px",
-                }}
-              >
-                Bricolage
-              </Typography>
-            </Stack>
-            <Stack direction="row" spacing={1}>
-              <Avatar
-                alt="littérature"
-                src="/static/images/avatar/1.jpg"
-                sx={{ width: 35, height: 35, bgcolor: blue[500] }}
-                style={{ marginTop: "18px" }}
-              />
-              <Typography
-                variant="body2"
-                size="small"
-                style={{
-                  textTransform: "capitalize",
-                  fontWeight: "bold",
-                  marginTop: "25px",
-                }}
-              >
-                littérature
-              </Typography>
-            </Stack>
-          </Stack>
-        </ListItem>
-      </List> */}
-
       <Grid container className={classes.root}>
         <Grid item md={9} sm={12} xs={12} className={classes.gridOne}>
           <Tabs
@@ -748,7 +542,6 @@ export default function Home(props) {
               color: "#6D6D6D",
               fontWeight: "bold",
               marginTop: "20px",
-              // marginBottom: "20px",
             }}
           >
             Trending instructors

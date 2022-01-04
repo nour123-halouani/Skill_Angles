@@ -44,7 +44,6 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  // Color: '#000'
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
@@ -205,21 +204,6 @@ export default function Navbar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" style={{ backgroundColor: "#FFFFFF" }}>
         <Toolbar>
-          {/* <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton> */}
-          {/* <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
-          > */}
           <Box
             variant="div"
             display="inline"
@@ -231,7 +215,6 @@ export default function Navbar() {
           >
             Skill angles
           </Box>
-          {/* </Typography> */}
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -239,7 +222,6 @@ export default function Navbar() {
             <StyledInputBase
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
-              // style={{Color: "#000"}}
             />
           </Search>
           <Box sx={{ flexGrow: 1 }} />

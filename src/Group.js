@@ -3,12 +3,12 @@ import * as React from "react";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
-import img from "./couv.jpg";
+import img from "./media/couv.jpg";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
-import img1 from "./profile.jpg";
+import img1 from "./media/profile.jpg";
 import Typography from "@mui/material/Typography";
 import PublicIcon from "@mui/icons-material/Public";
 import ChatIcon from "@mui/icons-material/Chat";
@@ -21,7 +21,7 @@ import BackupTableOutlinedIcon from "@mui/icons-material/BackupTableOutlined";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import image from "./dis-img.png";
+import image from "./media/dis-img.png";
 import Divider from "@mui/material/Divider";
 import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import Avatar from "@mui/material/Avatar";
@@ -29,7 +29,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ModeCommentIcon from "@mui/icons-material/ModeComment";
 import { green, pink, red, blue, yellow } from "@mui/material/colors";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
-import image2 from "./NEURONE.jpg";
+import image2 from "./media/NEURONE.jpg";
 import StarIcon from "@mui/icons-material/Star";
 
 function TabPanel(props) {
@@ -81,32 +81,23 @@ export default function Group() {
       background: "url(/static/media/couv.ec5d6b6e.jpg) no-repeat",
       backgroundSize: "cover",
       backgroundPosition: "center center",
-      // borderRadius:"40px"
     },
     btn: {
       position: "relative",
     },
     buttonOne: {
       marginRight: "8px",
-
-      // [theme.breakpoints.down('xs')]: {
-      //   marginBottom: "4px",
-      // },
     },
     botton: {
       position: "absolute",
       bottom: "5%",
       left: "40%",
-      // display: "inline-block",
-      // transition: "all 0.15s",
       marginBottom: "10px",
       marginLeft: "20px",
     },
     tab: {
       backgroundColor: "#FFF",
       height: "100%",
-      // paddingLeft: "30%",
-      // marginRight: "30%",
     },
     topcs: {
       fontWeight: "bolder",
@@ -128,7 +119,6 @@ export default function Group() {
       height: "25%",
       weight: "25%",
       marginTop: "5px",
-      // marginLeft:"10%",
       [theme.breakpoints.down("md")]: {
         marginLeft: "10%",
         marginBottom: "15px",
@@ -175,13 +165,7 @@ export default function Group() {
     },
     inside: {
       position: "relative",
-      // display:"flex",
-      // justifyContent:"space-around",
-      // width:"100%",
     },
-    // dataProfil: {
-    //   marginTop: "-27px",
-    // },
   }));
   const classes = useStyles();
 
@@ -228,10 +212,7 @@ export default function Group() {
               backgroundColor: "white",
             }}
           >
-            <Grid item xs={12} md={3} className={classes.dataProfil}>
-              {/* <img className={classes.photoProfil} src={img1} />
-              <Typography variant="h6" style={{color:"#909090"}}> Impressionist</Typography> */}
-            </Grid>
+            <Grid item xs={12} md={3} className={classes.dataProfil}></Grid>
             <Grid item xs={12} md={6}>
               <Tabs
                 value={value}
